@@ -25,7 +25,7 @@ export default function Hero() {
 
   return (
     <section id="about" className="hero">
-      <motion.div 
+      <motion.div
         className="hero-content"
         variants={containerVariants}
         initial="hidden"
@@ -36,31 +36,30 @@ export default function Hero() {
           <span className="hero-title-bold">Vansh</span>
         </motion.h1>
         <motion.p className="hero-description" variants={itemVariants}>
-          A junior developer and UI/UX designer who wants to bring your ideas
-          and visions to life digitally. I specialize in modern web design
-          and development.
+          Applied AI Engineer specializing in developing and deploying end-to-end AI/ML and custom solutions.
+          Proficient in key agent and orchestration frameworks.
         </motion.p>
         <motion.div className="hero-buttons" variants={itemVariants}>
           <a href="#" className="btn btn-dark">Download Resume</a>
           <Link to="/contact" className="btn btn-outline">
             Contact Me
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="22" y1="2" x2="11" y2="13"/>
-              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
             </svg>
           </Link>
         </motion.div>
       </motion.div>
-      <motion.div 
+      <motion.div
         className="hero-image"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
       >
-        <motion.img 
-          src="/memoji.png" 
-          alt="Vansh memoji" 
-          className="memoji-img" 
+        <motion.img
+          src="/memoji.png"
+          alt="Vansh memoji"
+          className="memoji-img"
           animate={{ y: [0, -15, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
         />
