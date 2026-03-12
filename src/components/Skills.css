@@ -1,0 +1,241 @@
+.skills-section {
+  padding: 60px 0;
+  background: transparent;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.section-title span {
+  color: #111;
+  opacity: 0.8;
+}
+
+.section-subtitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Languages Card */
+.languages-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  border-radius: 40px;
+  padding: 40px 60px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px; /* Reduced bottom margin */
+  position: relative;
+  overflow: hidden;
+}
+
+.languages-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.bars-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bar-label {
+  width: 100px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: right;
+}
+
+.bar-bg {
+  flex: 1;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #c0c0ff, #ffc0c0, #ffffc0);
+  border-radius: 4px;
+}
+
+.languages-title h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #000;
+  max-width: 300px;
+  text-align: right;
+}
+
+/* Marquee Divider */
+.marquee-divider {
+  width: 100%;
+  background: transparent;
+  padding: 40px 0; /* Standard padding */
+  margin-top: 40px; /* Separation from banner */
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.marquee-content {
+  display: flex;
+  flex-shrink: 0;
+  white-space: nowrap;
+  animation: scroll 30s linear infinite;
+}
+
+.marquee-content span {
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  min-height: 200px;
+  justify-content: center;
+}
+
+.skill-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 30px rgba(124, 77, 255, 0.1);
+  transform: translateY(-8px);
+}
+
+.skill-icon-wrapper {
+  margin-bottom: 16px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.skill-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.skill-category {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* Light Mode specific shadows and adjustments */
+.skill-card:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.2);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .languages-card {
+    padding: 30px;
+  }
+  
+  .languages-content {
+    flex-direction: column-reverse;
+  }
+  
+  .languages-title h3 {
+    text-align: center;
+    font-size: 2rem;
+    max-width: 100%;
+  }
+  
+  .marquee-content span {
+    font-size: 3rem;
+  }
+}

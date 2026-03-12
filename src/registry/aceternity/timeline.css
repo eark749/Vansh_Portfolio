@@ -1,0 +1,107 @@
+.tl-container {
+  width: 100%;
+  font-family: inherit;
+}
+
+.tl-items {
+  position: relative;
+  max-width: 52rem;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+/* ── Each row ── */
+.tl-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2.5rem 1.5rem 2.5rem 2rem;
+}
+
+/* ── Left: sticky title + dot ── */
+.tl-title-col {
+  flex: 0 0 9rem;
+  position: sticky;
+  top: 5.5rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  z-index: 10;
+}
+
+.tl-dot-outer {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.8);
+}
+
+.tl-dot-inner {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #111;
+}
+
+.tl-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* ── Right: content ── */
+.tl-content-col {
+  flex: 1;
+  min-width: 0;
+  padding-top: 0.35rem;
+}
+
+/* ── Animated line ── */
+.tl-line-track {
+  position: absolute;
+  left: 3.55rem;
+  top: 0;
+  width: 2px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.tl-line-fill {
+  position: absolute;
+  inset-x: 0;
+  top: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #a78bfa, #60a5fa, transparent);
+  border-radius: 9999px;
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .tl-item {
+    gap: 1rem;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .tl-title-col {
+    flex: 0 0 5.5rem;
+  }
+
+  .tl-title {
+    font-size: 0.8rem;
+  }
+
+  .tl-line-track {
+    left: 2.6rem;
+  }
+}
