@@ -6,11 +6,7 @@
   min-height: 100vh;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
+/* .container moved to index.css */
 
 .section-header {
   text-align: left;
@@ -237,5 +233,34 @@
   
   .marquee-content span {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 16px;
+  }
+
+  .skill-card {
+    padding: 16px;
+    min-height: 160px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .marquee-content span {
+    font-size: 2rem;
+  }
+
+  .languages-card {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .bar-label {
+    width: 60px;
   }
 }

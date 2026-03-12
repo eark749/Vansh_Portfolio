@@ -69,3 +69,26 @@
   background: linear-gradient(135deg, #a78bfa, #60a5fa);
   flex-shrink: 0;
 }
+@media (max-width: 768px) {
+  .process-section {
+    padding: 40px 16px 0;
+  }
+
+  .process-header {
+    margin-bottom: 0px;
+  }
+
+  .process-heading {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ps-desc {
+    font-size: 0.85rem;
+  }
+
+  .ps-list li {
+    font-size: 0.78rem;
+  }
+}

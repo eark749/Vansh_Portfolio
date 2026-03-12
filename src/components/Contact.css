@@ -184,7 +184,7 @@
 @media (max-width: 950px) {
   .contact-card-container {
     flex-direction: column;
-    margin: 0 20px;
+    margin: 0 auto;
     max-width: 500px;
   }
 
