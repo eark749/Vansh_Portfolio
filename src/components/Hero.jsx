@@ -40,7 +40,7 @@ export default function Hero() {
           Proficient in key agent and orchestration frameworks.
         </motion.p>
         <motion.div className="hero-buttons" variants={itemVariants}>
-          <a href="#" className="btn btn-dark">Download Resume</a>
+          <a href="https://drive.google.com/file/d/1x9QVGGTu7pCqcBOBzfa8ihdwRc-2x2OH/view?usp=sharing" target="_blank" rel="noreferrer" className="btn btn-dark">Download Resume</a>
           <Link to="/contact" className="btn btn-outline">
             Contact Me
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

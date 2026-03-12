@@ -223,12 +223,22 @@
   
   .languages-content {
     flex-direction: column-reverse;
+    align-items: stretch;
   }
   
   .languages-title h3 {
     text-align: center;
     font-size: 2rem;
     max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .bars-container {
+    width: 100%;
+  }
+
+  .bar-wrapper {
+    width: 100%;
   }
   
   .marquee-content span {

@@ -31,13 +31,13 @@ export default function Navbar() {
 
         {/* Desktop Socials */}
         <div className="navbar-socials">
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-icon" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/vansh-soni-7b918524a/" target="_blank" rel="noreferrer" className="social-icon" aria-label="LinkedIn">
             <FiLinkedin />
           </a>
-          <a href="https://x.com" target="_blank" rel="noreferrer" className="social-icon" aria-label="X">
+          <a href="https://x.com/_VanshSoni_" target="_blank" rel="noreferrer" className="social-icon" aria-label="X">
             <FaXTwitter />
           </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="social-icon" aria-label="GitHub">
+          <a href="https://github.com/eark749" target="_blank" rel="noreferrer" className="social-icon" aria-label="GitHub">
             <FiGithub />
           </a>
         </div>
@@ -82,13 +82,13 @@ export default function Navbar() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
               >
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-icon" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/vansh-soni-7b918524a/" target="_blank" rel="noreferrer" className="social-icon" aria-label="LinkedIn">
                   <FiLinkedin />
                 </a>
-                <a href="https://x.com" target="_blank" rel="noreferrer" className="social-icon" aria-label="X">
+                <a href="https://x.com/_VanshSoni_" target="_blank" rel="noreferrer" className="social-icon" aria-label="X">
                   <FaXTwitter />
                 </a>
-                <a href="https://github.com" target="_blank" rel="noreferrer" className="social-icon" aria-label="GitHub">
+                <a href="https://github.com/eark749" target="_blank" rel="noreferrer" className="social-icon" aria-label="GitHub">
                   <FiGithub />
                 </a>
               </motion.div>
